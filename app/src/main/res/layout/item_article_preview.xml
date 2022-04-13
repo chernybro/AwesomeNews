@@ -4,23 +4,24 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:layout_height="wrap_content"
+    android:layout_height="128dp"
     android:background="@drawable/shape_round_corner"
-    android:padding="4dp">
+    android:padding="4dp"
+    android:layout_marginTop="2dp">
 
     <ImageView
         android:id="@+id/article_preview_image"
-        app:layout_constraintTop_toBottomOf="@id/article_preview_source"
+        app:layout_constraintTop_toTopOf="@id/article_preview_description"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:background="@drawable/shape_round_corner"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
         tools:src="@android:mipmap/sym_def_app_icon"
         android:contentDescription="null">
     </ImageView>
     <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:padding="8dp"
+        android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/article_preview_source"
@@ -30,6 +31,8 @@
     </TextView>
 
     <TextView
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp"
@@ -40,15 +43,19 @@
     </TextView>
 
     <TextView
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:id="@+id/article_preview_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="8dp"
+        android:maxLength="180"
+        android:maxLines="4"
+        android:ellipsize="end"
         android:text="Follow the New York Post’s live updates of Tuesday’s subway shooting attack at Brooklyn’s 36th Street station, which left at least 29 people injured."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/article_preview_image"
         app:layout_constraintTop_toBottomOf="@id/article_preview_source">
-
     </TextView>
 
 

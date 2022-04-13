@@ -40,16 +40,11 @@ class NewsListFragment: Fragment() {
         viewModel.getNewsList(Constants.DEFAULT_COUNTRY)
     }
 
-    override fun onResume() {
-        super.onResume()
-    }
 
     private fun configureRecyclerView() {
         val layoutManager: RecyclerView.LayoutManager = LinearLayoutManager(activity)
         binding.recyclerView.layoutManager = layoutManager
         binding.recyclerView.adapter = newsAdapter
-        val dividerItemDecoration = DividerItemDecoration(activity, DividerItemDecoration.VERTICAL)
-        binding.recyclerView.addItemDecoration(dividerItemDecoration)
     }
 
     private fun configureViewModel() {
