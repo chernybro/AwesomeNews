@@ -15,7 +15,7 @@ fun NewsDTO.toArticlePreviewList(): List<ArticlePreview> {
     return articles.map { articleDTO ->
         ArticlePreview(
             source = articleDTO.source.name,
-            date = Date(articleDTO.publishDate).toIsoString(),
+            date = articleDTO.publishDate,
             image = articleDTO.imageUrl,
             description = articleDTO.description
         )

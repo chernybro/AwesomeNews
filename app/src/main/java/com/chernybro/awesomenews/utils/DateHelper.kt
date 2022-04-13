@@ -14,6 +14,6 @@ object DateHelper {
 
     fun Date.toIsoString(): String {
         val dateFormat: DateFormat = SimpleDateFormat(ISO_8601_24H_FULL_FORMAT)
-        return dateFormat.format(this)
+        return dateFormat.format( this)
     }
 }
