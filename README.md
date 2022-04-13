@@ -13,4 +13,4 @@ Kotlin, MVVM, RxJava2, Hilt, Retrofit
 
 ## Установка
 
-Файлом - [RatesApp](https://github.com/chernybro/AwesomeNews/blob/main/news.apk).
+Файлом - [NewsApp](https://github.com/chernybro/AwesomeNews/blob/main/news.apk).
